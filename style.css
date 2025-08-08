@@ -39,18 +39,23 @@ h1 {
 }
 
 .email-icon {
-    display: block;
+   display: block;
     gap: 15px;
     margin: 10px 0 30px;
+    font-size: 20px;
+    
     
 }
 
 .email-icon a {
     text-decoration: none;
-    font-size: 20px;
-    color: white;
-    
+    font-size: 15px;
+    color: #908990;
+    font-family:  'Work Sans', sans-serif;
+   
 }
+
+
 
 .link-button {
     box-sizing: border-box;
