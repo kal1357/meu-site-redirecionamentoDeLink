@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1d804e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    overflow-y: hidden;
+}
+.container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(8, 37, 2, 0.1);
+    border-radius: 30px;
+    position: relative;
+    min-height: 100vh; /* altura fixa */
+    padding-top: 30px;
+}
+
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family:  'Work Sans', sans-serif;
+    font-size: 20px;
+    margin: 15px 0 5px;
+    color: #fbfbfb;
+}
+
+.email-icon {
+    display: block;
+    gap: 15px;
+    margin: 10px 0 30px;
+    
+}
+
+.email-icon a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.link-button {
+    box-sizing: border-box;
+    background-color: white;
+    color: #908990;
+    border: 5px solid transparent;
+    border-radius: 40px;
+    padding: 15px 20px;
+    width: auto;
+    min-width: 200px;
+    max-width: 550px;
+    margin: 15px auto;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    transition: outline 0.2s ease-in-out;
+    font-family:  'Work Sans', sans-serif;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.link-button:hover {
+     outline: 5px solid rgba(240, 238, 238, 0.5);
+}
+.link-button i {
+    position: absolute;
+    left: 20px; /* distância da borda esquerda */
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 0;
+    font-size: 40px;
+    vertical-align: middle;
+}
+   
+.footer {
+    margin-top: 100px;
+    font-size: 12px;
+    color: #ccc;
+}
+ #toggle-theme {
+    background-color: white;
+    color: #333;
+    border: none;
+    border-radius: 40px;
+    
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin-top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    
+}
+
+.dark-mode #toggle-theme {
+    background-color: #333;
+    color: white;
+
+}
+body.dark-mode {
+    background-color: #181818;
+    color: #fafafa;
+}
+
+body.dark-mode .container {
+    background-color: rgba(20, 20, 20, 0.95);
+}
+
+body.dark-mode .link-button {
+    background-color: #232323;
+    color: #fafafa;
+    border-color: #444;
+}
+
+body.dark-mode .footer {
+    color: #888;
+}
+.scroll-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2rem;
+  opacity: 1;
+  transition: opacity 0.3s ease; /* Efeito suave */
+}
+
+.scroll-icon.hidden {
+  opacity: 0; /* Some quando a classe "hidden" é adicionada */
+}
