@@ -56,7 +56,7 @@ h1 {
     box-sizing: border-box;
     background-color: white;
     color: #908990;
-    border: 5px solid transparent;
+    border: 1px solid transparent;
     border-radius: 40px;
     padding: 15px 20px;
     width: auto;
